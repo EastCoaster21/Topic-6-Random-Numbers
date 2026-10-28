@@ -9,6 +9,8 @@ namespace Topic_6_Random_Numbers
         {
             //Random generator = new Random();
             int randNum;
+            int lowInput;
+            int highInput;
             Random generator = new Random();
             randNum = generator.Next(10);
 
@@ -40,6 +42,9 @@ namespace Topic_6_Random_Numbers
                 Console.WriteLine("The random numbers were different! Not weird. ");
             }
             Console.ReadLine(); // Keeps the program from quitting
+            Console.Clear();
+            Console.WriteLine("Please enter a random number between 1 and 50.");
+            //Convert.ToInt32.(TryParse(Console.ReadLine))
         }
     }
 }
